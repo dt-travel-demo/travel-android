@@ -1,6 +1,8 @@
 <template>
 	<view class="content">
 		<button @click="fn">引导页</button>
+		<button @click="qq">qq</button>
+		{{title}}
 	</view>
 </template>
 
@@ -15,6 +17,10 @@
 
 		},
 		methods: {
+			async qq(){
+				let str=await this.$request('/qqtx/api.php',{data:{qq:2052596033}})
+				this.title=str
+			},
 			fn(){
 				uni.navigateTo({
 					url:'/pages/guide/guide'
