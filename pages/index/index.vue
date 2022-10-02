@@ -1,9 +1,6 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+		<button @click="fn">引导页</button>
 	</view>
 </template>
 
@@ -18,7 +15,11 @@
 
 		},
 		methods: {
-
+			fn(){
+				uni.navigateTo({
+					url:'/pages/guide/guide'
+				})
+			}
 		}
 	}
 </script>
