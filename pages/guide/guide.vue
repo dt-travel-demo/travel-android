@@ -2,14 +2,14 @@
 	<view>
 		<swiper :indicator-dots="true" :duration="500" indicator-active-color="rgb(109,97,242)">
 			<swiper-item>
-				<text>跳过</text>
+				<!-- <text>跳过</text> -->
 				<image src="../../static/guide/guide1.png" mode=""></image>
-				<button @click="next">下一页</button>
+				<!-- <button @click="next">下一页</button> -->
 			</swiper-item>
 			<swiper-item>
-				<text>跳过</text>
+				<!-- <text>跳过</text> -->
 				<image src="../../static/guide/guide2.png" mode=""></image>
-				<button @click="next">下一页</button>
+				<!-- <button @click="next">下一页</button> -->
 			</swiper-item>
 			<swiper-item>
 				<image src="../../static/guide/guide3.png" mode=""></image>
