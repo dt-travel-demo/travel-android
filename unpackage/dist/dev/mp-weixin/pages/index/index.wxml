@@ -1,1 +1,1 @@
-<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text></view></view>
+<view class="content"><button data-event-opts="{{[['tap',[['fn',['$event']]]]]}}" bindtap="__e">引导页</button><button data-event-opts="{{[['tap',[['qq',['$event']]]]]}}" bindtap="__e">登录页</button>{{''+title+''}}</view>

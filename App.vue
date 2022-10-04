@@ -23,4 +23,10 @@
 	    width:100%;
 	    height:100%;
 	}
+	image{
+		vertical-align: middle;
+	}
+	.bombox{
+		height: 130rpx;
+	}
 </style>

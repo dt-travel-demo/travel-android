@@ -158,13 +158,15 @@
 					border: 1rpx solid #D8E0F0;
 				}
 				input{
+					width: 150%;
 					margin: 0;
 					position: absolute;
 					top: 0;
+					left: 0;
 					border: none;
 					font-size: 50rpx;
 					text-indent: 70rpx;
-					letter-spacing: 104rpx;  //字符间距
+					letter-spacing: 102rpx;  //字符间距
 				}
 			}
 		}

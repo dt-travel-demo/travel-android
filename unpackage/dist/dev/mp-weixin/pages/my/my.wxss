@@ -1,0 +1,85 @@
+.head {
+  display: block;
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 40rpx;
+  margin: 48rpx auto 32rpx;
+}
+.name {
+  font-size: 32rpx;
+  width: 100vw;
+  text-align: center;
+}
+.job {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #afafaf;
+  text-align: center;
+}
+.lists {
+  margin-top: 20rpx;
+  width: 100vw;
+  height: 100rpx;
+  display: flex;
+  font-size: 28rpx;
+  color: #afafaf;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.lists ._h4 {
+  font-size: 44rpx;
+  color: black;
+}
+.lists .line {
+  border: 1rpx solid #E7EAF0;
+  border-radius: 5rpx;
+  width: 0;
+  height: 60%;
+  background-color: #E7EAF0;
+}
+.btns {
+  margin: 50rpx 0;
+  width: 100vw;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.btns .add {
+  width: 456rpx;
+  background-color: #02DA98;
+  border-radius: 25rpx;
+  border: none;
+  color: white;
+}
+.btns .set {
+  width: 160rpx;
+  border: 1rpx solid #8a8a8a;
+  border-radius: 25rpx;
+  background-color: white;
+}
+.btns .set image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.imgs {
+  width: 100vw;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: space-evenly;
+}
+.imgs view {
+  width: 40%;
+  display: inline-block;
+}
+.imgs view .img1 {
+  display: inline-block;
+  width: 100%;
+  height: none;
+  margin-bottom: 40rpx;
+  border-radius: 30rpx;
+}
+.bombox {
+  height: 130rpx;
+}
+

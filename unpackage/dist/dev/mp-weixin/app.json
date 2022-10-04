@@ -1,13 +1,46 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/guide/guide",
+    "pages/login/login",
+    "pages/login/sign",
+    "pages/classify/classify",
+    "pages/order/order",
+    "pages/my/my"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
   },
-  "usingComponents": {}
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/zhuye0.png",
+        "selectedIconPath": "static/tabbar/zhuye.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "static/tabbar/fenlei0.png",
+        "selectedIconPath": "static/tabbar/fenlei.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "static/tabbar/dingdan0.png",
+        "selectedIconPath": "static/tabbar/dingdan.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/tabbar/wode0.png",
+        "selectedIconPath": "static/tabbar/wode.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "title": "/component/title/title"
+  }
 }

@@ -35,17 +35,59 @@
 				"navigationStyle": "custom"
 			}
 
-		}
-	],
+		} ,{
+            "path" : "pages/classify/classify",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+	    ,{
+            "path" : "pages/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8",
-		"app-plus": {
-			"animationDuration": 200,
-			"animationType": "pop-in"
-		}
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/zhuye0.png",
+				"selectedIconPath": "static/tabbar/zhuye.png"
+			},{
+				"pagePath": "pages/classify/classify",
+				"iconPath": "static/tabbar/fenlei0.png",
+				"selectedIconPath": "static/tabbar/fenlei.png"
+			},{
+				"pagePath": "pages/order/order",
+				"iconPath": "static/tabbar/dingdan0.png",
+				"selectedIconPath": "static/tabbar/dingdan.png"
+			},{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tabbar/wode0.png",
+				"selectedIconPath": "static/tabbar/wode.png"
+			}]
 	},
 	"uniIdRouter": {}
 }

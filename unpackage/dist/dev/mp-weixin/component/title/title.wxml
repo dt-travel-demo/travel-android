@@ -1,0 +1,1 @@
+<view class="bigbox data-v-7c9db5b1"><view class="title data-v-7c9db5b1"><view class="box data-v-7c9db5b1"></view><view class="text data-v-7c9db5b1"><slot></slot></view></view><view class="bg data-v-7c9db5b1"></view></view>

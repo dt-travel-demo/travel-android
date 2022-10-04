@@ -1,0 +1,36 @@
+swiper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #959696;
+}
+swiper swiper-item {
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+swiper swiper-item text {
+  display: block;
+  margin: 150rpx 0 0 600rpx;
+  font-size: 32rpx;
+  color: #6e80b0;
+}
+swiper swiper-item image {
+  position: absolute;
+  top: 30vw;
+  left: 0;
+  width: 100vw;
+  height: 120vw;
+}
+swiper swiper-item button {
+  position: absolute;
+  bottom: 10%;
+  width: 700rpx;
+  background-color: #6d61f2;
+  border-radius: 30rpx;
+  color: white;
+  border: none;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
