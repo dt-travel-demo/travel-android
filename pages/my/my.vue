@@ -24,7 +24,7 @@
 		<!-- 按钮 -->
 		<view class="btns">
 			<button class="add">添加足迹</button>
-			<button class="set"><image src="../../static/set.png" mode=""></image></button>
+			<button class="set" @click="goToSetMsg"><image src="../../static/set.png" mode=""></image></button>
 		</view>
 		<!-- 图片流 -->
 		<view class="imgs">
@@ -70,6 +70,11 @@
 					}
 				})
 
+			},
+			goToSetMsg(){
+				uni.navigateTo({
+					url:'/pages/setmsg/setmsg'
+				})
 			}
 		},
 		computed:{
