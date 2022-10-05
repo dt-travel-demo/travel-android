@@ -54,14 +54,9 @@
 			};
 		},
 		onLoad() {
-			this.setImgHeight()
 			this.imgH()
 		},
 		methods:{
-			async setImgHeight(){
-				let o=await this.$getImgH(310,'../../static/shanghai.webp')
-				console.log(o)
-			},
 			imgH(){
 			let arr=[]
 				this.imgs.forEach(async (s,i)=>{
@@ -70,7 +65,7 @@
 					arr.push(obj)
 					
 					if(arr.length==this.imgs.length){
-						console.log(arr)
+						//由于测试时图片过少，相同的图片会排在一起，所以加个乱序
 						this.images=arr.sort(()=>Math.random()-0.5)
 					}
 				})
@@ -78,24 +73,6 @@
 			}
 		},
 		computed:{
-			/* imgH(){
-				let arr=[]
-				let that=this
-				this.imgs.forEach(s=>{
-					uni.getImageInfo({
-						src:s,
-						success(img) {
-							let obj={
-								url:img.path,
-								height:310/img.width*img.height+'rpx'
-							}
-							arr.push(obj)
-							if(arr.length==that.imgs.length)console.log(arr)
-						}
-					})
-				})
-
-			} */
 			
 		}
 	}
