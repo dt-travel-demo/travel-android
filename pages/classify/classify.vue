@@ -33,7 +33,7 @@
 		</view>
 		<!-- 内容模块 -->
 		<view class="content">
-			<view class="conts">
+			<view class="conts" @click="goToDetail">
 				<image src="../../static/shanghai.webp" mode=""></image>
 				<h5>感受大自然的清凉<image src="../../static/Frame 2.png" mode=""></image></h5>
 				<text>中国，上海</text>
@@ -60,6 +60,13 @@
 			return {
 				
 			};
+		},
+		methods:{
+			goToDetail(){
+				uni.navigateTo({
+					url:'/pages/detail/detail'
+				})
+			}
 		}
 	}
 </script>
