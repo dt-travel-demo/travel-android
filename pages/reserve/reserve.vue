@@ -24,7 +24,7 @@
 				      ></uni-data-select>
 					  <image src="../../static/jiantou.png" mode=""></image>
 			</view>
-			<button class="btn" @click="goToReserve">确定</button>
+			<button class="btn">确定</button>
 			<view class="bombox"></view>
 		</view>
 
