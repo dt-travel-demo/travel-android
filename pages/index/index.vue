@@ -72,7 +72,7 @@
 				<h1>最热景点</h1>
 				<image src="../../static/d.png" mode=""></image>
 			</view>
-			<view class="j-box">
+			<view class="j-box" @tap="gotoyd">
 				<image src="../../static/ls.png" mode=""></image>
 				<view class="txt">
 					<h1>南圣托里尼岛</h1>
@@ -97,6 +97,11 @@
 		methods: {
 			cl(i) {
 				this.c = i
+			},
+			gotoyd(){
+				uni.navigateTo({
+					url:'/pages/detail/detail'
+				})
 			}
 		}
 	}
