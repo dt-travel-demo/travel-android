@@ -89,6 +89,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/dd/dd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

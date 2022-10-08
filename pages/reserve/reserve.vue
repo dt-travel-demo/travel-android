@@ -57,6 +57,11 @@
 			},
 			fn(){
 				console.log(666)
+			},
+			goToReserve(){
+				uni.navigateTo({
+					url:'/pages/dd/dd'
+				})
 			}
 		}
 	}
