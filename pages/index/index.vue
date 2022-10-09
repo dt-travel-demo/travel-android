@@ -54,12 +54,12 @@
 			</view>
 			<view class="l-img-hide">
 				<view class="l-img-box">
-					<view class="l-img">
+					<view class="l-img" @click="gotoyd">
 						<image src="../../static/ld.png" mode=""></image>
 						<h1>伦敦塔桥</h1>
 						<h1>英国,伦敦</h1>
 					</view>
-					<view class="l-img">
+					<view class="l-img" @click="gotoyd">
 						<image src="../../static/ld.png" mode=""></image>
 						<h1>伦敦塔桥</h1>
 						<h1>英国,伦敦</h1>
@@ -92,7 +92,12 @@
 			}
 		},
 		onLoad() {
-
+			let str=uni.getStorageSync('first')
+			if(!str){
+				uni.redirectTo({
+					url:'/pages/guide/guide'
+				})
+			}
 		},
 		methods: {
 			cl(i) {

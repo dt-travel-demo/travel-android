@@ -1,1 +1,0 @@
-<view class="content"><button data-event-opts="{{[['tap',[['fn',['$event']]]]]}}" bindtap="__e">引导页</button><button data-event-opts="{{[['tap',[['qq',['$event']]]]]}}" bindtap="__e">登录页</button>{{''+title+''}}</view>

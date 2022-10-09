@@ -31,7 +31,8 @@
 				console.log('下一页')
 			},
 			async gotoIndex() {
-				uni.redirectTo({
+				uni.setStorageSync('first','true')
+				uni.switchTab({
 					url: "/pages/index/index"
 				})
 			}

@@ -2,6 +2,9 @@
 	<view>
 		<Title>个人中心</Title>
 		<image class="head" src="../../static/shanghai.webp"></image>
+		<view class="denglu" @click="goToLogin">
+			登录
+		</view>
 		<h3 class="name">林留真</h3>
 		<view class="job">UI/UX 设计师</view>
 		<!-- 信息展示 -->
@@ -75,6 +78,11 @@
 				uni.navigateTo({
 					url:'/pages/setmsg/setmsg'
 				})
+			},
+			goToLogin(){
+				uni.navigateTo({
+					url:'/pages/login/login'
+				})
 			}
 		},
 		computed:{
@@ -90,6 +98,11 @@
 	height: 240rpx;
 	border-radius: 40rpx;
 	margin: 48rpx auto 32rpx;
+}
+.denglu{
+	position: absolute;
+	top: 170rpx;
+	right: 50rpx;
 }
 .name{
 	font-size: 32rpx;

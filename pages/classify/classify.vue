@@ -3,7 +3,7 @@
 		<!-- 头部 -->
 		<view class="top">
 			<view class="sou">
-				<text>扎金索斯 <image src="../../static/三角.png" mode=""></image></text>
+				<text>扎金索斯 <image src="../../static/sanjiao.png" mode=""></image></text>
 				
 				<image src="../../static/sou.png" mode=""></image>
 			</view>
@@ -39,12 +39,12 @@
 				<text>中国，上海</text>
 			</view>
 			
-			<view class="conts">
+			<view class="conts" @click="goToDetail">
 				<image src="../../static/shanghai.webp" mode=""></image>
 				<h5>感受大自然的清凉<image src="../../static/Frame 2.png" mode=""></image></h5>
 				<text>中国，上海</text>
 			</view>
-			<view class="conts">
+			<view class="conts" @click="goToDetail">
 				<image src="../../static/shanghai.webp" mode=""></image>
 				<h5>感受大自然的清凉<image src="../../static/Frame 2.png" mode=""></image></h5>
 				<text>中国，上海</text>

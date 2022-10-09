@@ -25,7 +25,7 @@
 				</label>
 				<text>忘记密码？</text>
 			</view>
-			<button class="login">登录<image src="../../static/login》.png" mode=""></image></button>
+			<button class="login" @click="goToIndex">登录<image src="../../static/login》.png" mode=""></image></button>
 			<text class="h5"  @click="goToSign">没有账户?去注册</text>
 		</view>
 		<text class="qita">——  其他登录方式  ——</text>
@@ -47,6 +47,11 @@
 			goToSign(){
 				uni.navigateTo({
 					url:'/pages/login/sign'
+				})
+			},
+			goToIndex(){
+				uni.switchTab({
+					url:'/pages/index/index'
 				})
 			}
 		}

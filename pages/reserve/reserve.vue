@@ -24,7 +24,7 @@
 				      ></uni-data-select>
 					  <image src="../../static/jiantou.png" mode=""></image>
 			</view>
-			<button class="btn">确定</button>
+			<button class="btn" @click="goToDD">确定</button>
 			<view class="bombox"></view>
 		</view>
 
@@ -59,6 +59,11 @@
 				console.log(666)
 			},
 			goToReserve(){
+				uni.navigateTo({
+					url:'/pages/dd/dd'
+				})
+			},
+			goToDD(){
 				uni.navigateTo({
 					url:'/pages/dd/dd'
 				})

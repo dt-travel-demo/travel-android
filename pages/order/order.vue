@@ -8,7 +8,7 @@
 		<view class="list">
 			
 			<!-- 每一张票 -->
-			<view class="ticket" v-for="item in activeList" :key="item.id">
+			<view class="ticket" v-for="item in activeList" :key="item.id" @click="goToDD">
 				<!-- 票上面的盒子 -->
 			<view class="box-top">
 				<image :src="item.type=='train'?'../../static/huoche.png':'../../static/feiji.png'" mode=""></image>
@@ -90,6 +90,11 @@
 					case 3:
 					return '评价';
 				}
+			},
+			goToDD(){
+				uni.navigateTo({
+					url:'/pages/dd/dd'
+				})
 			}
 		},
 		computed:{

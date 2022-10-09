@@ -40,7 +40,7 @@
 			</view>
 		
 		</view>
-		<button class="login">去登录<image src="../../static/login》.png" mode=""></image></button>
+		<button class="login" @click="goToIndex">去登录<image src="../../static/login》.png" mode=""></image></button>
 	</view>
 </template>
 
@@ -55,6 +55,11 @@
 			goToBack() {
 				uni.navigateBack()
 			},
+			goToIndex(){
+				uni.switchTab({
+					url:'/pages/index/index'
+				})
+			}
 		}
 	}
 </script>
